@@ -67,15 +67,24 @@ namespace ufl_cap4053 { namespace fundamentals {
     }
     //Returns an Iterator pointing past the end of the list (an invalid, unique state).
     public bool isEmpty() const{
-
+        if(Head == nullptr){
+            return true;
+        }
+        return false;
     }
     //Returns true if there are no elements, false otherwise.
     public T getFront() const{
-
+        return Head; 
     }
     //Returns the first element in the list.
     public T getBack() const{
+            Node *nav = Head;
+            while (nav.getNex() t != nullptr)
+            {
+                nav = nav.getNext()
+            }
 
+            return nav;
     }
     //Returns the last element in the list.
     public void enqueue(T element){
@@ -107,19 +116,50 @@ namespace ufl_cap4053 { namespace fundamentals {
     //Removes the first element from the list.
     public void pop(){
         Node* nav = Head; 
-        while(nav.getNext!=nullptr){
-            //keep going
+        while(nav.getNex()t!=nullptr){
+            nav = nav.getNext()
         }
          
-        nav.getPrev.getNext = nullptr;
+        nav.getPrev.setData(nullptr);
         delete nav; 
     }
     //Removes the last element from the list.
-    public void clear()
+    public void clear(){
+       Node* temp = Head;
+       while (temp!=nullptr){
+        Head = temp.getNext();
+        delete temp;
+        temp= Head;
+       }
+    }
     //Removes all elements from the list.
-    public bool contains(T element) const
+    public bool contains(T element) const{
+            Node *temp = Head;
+            while (temp != nullptr)
+            {
+                
+                if(temp.getData() == element) {
+                    return true
+                }
+                temp = temp.getNext();
+            }
+            return false; 
+    }
     //Returns true if you find a node whose data equals the specified element, false otherwise.
-    public void remove(T element)
+    public void remove(T element){
+            Node *temp = Head;
+            while (temp != nullptr)
+            {
+
+                if (temp.getData() == element)
+                {
+                    delete temp; 
+                    return 0; 
+                }
+                temp = temp.getNext();
+            }
+        }
+    
     //Removes the first node you find whose data equals the specified element.
     };
 
