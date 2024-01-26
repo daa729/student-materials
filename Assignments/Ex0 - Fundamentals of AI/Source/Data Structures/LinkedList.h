@@ -16,8 +16,8 @@ namespace ufl_cap4053 { namespace fundamentals {
 
     template <class T>
     class LinkedList{
-        Node* Head;
-        int Size;
+    
+        template <class T>
         class Node{
             private:
             <T> Data; 
@@ -53,6 +53,8 @@ namespace ufl_cap4053 { namespace fundamentals {
 
 
         }
+     Node* Head;
+     int Size;
     public LinkedList<T>(){
         Head = nullptr; 
         Size = 0;

@@ -1,0 +1,169 @@
+﻿  main.cpp
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(56,6): error C2143: syntax error: missing ';' before 'identifier'
+  (compiling source file 'main.cpp')
+  C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(56,6):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(166,6):
+  	see reference to class template instantiation 'ufl_cap4053::fundamentals::LinkedList<T>' being compiled
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(23,13): error C2059: syntax error: '<'
+  (compiling source file 'main.cpp')
+  C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(23,13):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(56,1):
+  	see reference to class template instantiation 'ufl_cap4053::fundamentals::LinkedList<T>::Node<T>' being compiled
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(23,21): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(32,13): error C2059: syntax error: '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(32,26): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(43,26): error C2059: syntax error: '<'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(56,12): error C2955: 'ufl_cap4053::fundamentals::LinkedList<T>::Node': use of class template requires template argument list
+  (compiling source file 'main.cpp')
+  C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(21,1):
+  see declaration of 'ufl_cap4053::fundamentals::LinkedList<T>::Node'
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(58,12): error C2059: syntax error: '<template-id>'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(58,27): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(63,12): error C2146: syntax error: missing ':' before identifier 'Iterator'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(63,34): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(67,12): error C2146: syntax error: missing ':' before identifier 'Iterator'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(67,32): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(71,12): error C2062: type 'bool' unexpected
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(71,32): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(78,12): error C2146: syntax error: missing ':' before identifier 'T'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(78,30): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(82,12): error C2146: syntax error: missing ':' before identifier 'T'
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(82,29): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(92,12): error C2062: type 'void' unexpected
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(92,35): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(108,12): error C2062: type 'void' unexpected
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(108,26): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(119,12): error C2062: type 'void' unexpected
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(119,22): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(129,12): error C2062: type 'void' unexpected
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(129,24): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(138,12): error C2062: type 'bool' unexpected
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(138,42): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(151,12): error C2062: type 'void' unexpected
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(151,34): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(28,17): error C3861: 'Data': identifier not found
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(28,17): error C2065: 'Data': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(44,17): error C3861: 'Data': identifier not found
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(44,24): error C3861: 'temp': identifier not found
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(44,17): error C2065: 'Data': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(44,24): error C2065: 'temp': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(56,12): error C2955: 'ufl_cap4053::fundamentals::LinkedList<std::string>::Node': use of class template requires template argument list
+  (compiling source file 'main.cpp')
+  C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(21,1):
+  see declaration of 'ufl_cap4053::fundamentals::LinkedList<std::string>::Node'
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(56,12): error C2955: 'ufl_cap4053::fundamentals::LinkedList<const char *>::Node': use of class template requires template argument list
+  (compiling source file 'main.cpp')
+  C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(21,1):
+  see declaration of 'ufl_cap4053::fundamentals::LinkedList<const char *>::Node'
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(38,5): error C2039: 'isEmpty': is not a member of 'ufl_cap4053::fundamentals::LinkedList<const char *>'
+  C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(22,11):
+  see declaration of 'ufl_cap4053::fundamentals::LinkedList<const char *>'
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(38,5): error C2039: 'isEmpty': is not a member of 'ufl_cap4053::fundamentals::LinkedList<std::string>'
+  C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(21,11):
+  see declaration of 'ufl_cap4053::fundamentals::LinkedList<std::string>'
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(44,19): error C2039: 'enqueue': is not a member of 'ufl_cap4053::fundamentals::LinkedList<std::string>'
+  C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(21,11):
+  see declaration of 'ufl_cap4053::fundamentals::LinkedList<std::string>'
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(45,21): error C2039: 'enqueue': is not a member of 'ufl_cap4053::fundamentals::LinkedList<const char *>'
+  C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(22,11):
+  see declaration of 'ufl_cap4053::fundamentals::LinkedList<const char *>'
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(56,34): error C2039: 'getFront': is not a member of 'ufl_cap4053::fundamentals::LinkedList<const char *>'
+  C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(22,11):
+  see declaration of 'ufl_cap4053::fundamentals::LinkedList<const char *>'
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(57,21): error C2039: 'dequeue': is not a member of 'ufl_cap4053::fundamentals::LinkedList<const char *>'
+  C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(22,11):
+  see declaration of 'ufl_cap4053::fundamentals::LinkedList<const char *>'
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(62,25): error C2039: 'isEmpty': is not a member of 'ufl_cap4053::fundamentals::LinkedList<const char *>'
+  C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(22,11):
+  see declaration of 'ufl_cap4053::fundamentals::LinkedList<const char *>'
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(65,23): error C2039: 'dequeue': is not a member of 'ufl_cap4053::fundamentals::LinkedList<std::string>'
+  C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(21,11):
+  see declaration of 'ufl_cap4053::fundamentals::LinkedList<std::string>'
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(70,28): error C2039: 'getFront': is not a member of 'ufl_cap4053::fundamentals::LinkedList<std::string>'
+  C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(21,11):
+  see declaration of 'ufl_cap4053::fundamentals::LinkedList<std::string>'
+  
+C:\Users\Andy\Documents\GitHub\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(70,28): error C1003: error count exceeds 100; stopping compilation
