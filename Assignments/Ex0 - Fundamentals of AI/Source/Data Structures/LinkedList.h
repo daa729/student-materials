@@ -14,13 +14,14 @@ namespace ufl_cap4053 { namespace fundamentals {
     // //Returns false if both iterators point to the same node in the list, and true otherwise
     // };
 
+
     template <class T>
     class LinkedList{
     
-        template <class T>
-        class Node{
+        private:
+    class Node{
             private:
-            <T> Data; 
+            T Data; 
             Node* Next; 
             Node* Prev;
             public: 
@@ -29,7 +30,7 @@ namespace ufl_cap4053 { namespace fundamentals {
                 Next = nullptr;
                 Prev = nullptr;
             }
-            <T> getData(){
+            T getData(){
                 return Data;
             }
             Node* getNext(){
@@ -40,7 +41,7 @@ namespace ufl_cap4053 { namespace fundamentals {
                 return Prev;
             }
 
-            void setData(<T> temp){
+            void setData(T temp){
                 Data = temp; 
             }
             void setNext(Node* next){
@@ -52,113 +53,137 @@ namespace ufl_cap4053 { namespace fundamentals {
 
 
 
+        };
+    class Iterator{
+        Node* Current;
+        public:
+        Iterator(Node* current){
+            Current = current;
         }
+        
+        T operator*() const{
+            return Current->getData();
+        }
+        Iterator &operator++(){
+            Current = Current->getNext();
+            return *this;
+        }
+        bool operator==(Iterator const &rhs){
+            return rhs.Current == Current;
+        }
+        bool operator!=(Iterator const &rhs){
+            return rhs.Current != Current;
+        }
+    };
+    
+    
      Node* Head;
      int Size;
-    public LinkedList<T>(){
+    public:
+    LinkedList<T>(){
         Head = nullptr; 
         Size = 0;
     }
     //This is the constructor for LinkedList.
-    public Iterator begin() const{
-
+    Iterator begin() const{
+        return Iterator(Head);
     }
     //Returns an Iterator pointing to the beginning of the list.
-    public Iterator end() const{
-
+    Iterator end() const{
+        return Iterator(nullptr);
     }
     //Returns an Iterator pointing past the end of the list (an invalid, unique state).
-    public bool isEmpty() const{
+    bool isEmpty() const{
         if(Head == nullptr){
             return true;
         }
         return false;
     }
     //Returns true if there are no elements, false otherwise.
-    public T getFront() const{
-        return Head; 
+   T getFront() const{
+        return Head->getData(); 
     }
     //Returns the first element in the list.
-    public T getBack() const{
+    T getBack() const{
             Node *nav = Head;
-            while (nav.getNex() t != nullptr)
+            while (nav->getNext() != nullptr)
             {
-                nav = nav.getNext()
+                nav = nav->getNext();
             }
 
-            return nav;
+            return nav->getData();
     }
     //Returns the last element in the list.
-    public void enqueue(T element){
+    void enqueue(T element){
         Node* Temp = Head;
         Node* Prev = nullptr; 
         bool placed = false; 
         while(placed ==false) {
             if(Temp == nullptr){
-                Prev->Next = new Node(element);
-                Prev->Next.setPrev(Prev); 
+                Prev->setNext(new Node(element));
+                Prev->getNext()->setPrev(Prev); 
                 placed =true;
                 Size++;
             }else {
-                Temp = Prev->Next;
+                Temp = Prev->getNext();
             }
         }
     }
     //Inserts the specified element at the end of the list.
-    public void dequeue(){
+    void dequeue(){
         if (Head == nullptr){
-            cout<<"Dequeue on a null"<<endl;
+          
         }else {
             Node* Temp = Head;
-            Head = Head.getNext();
+            Head = Head->getNext();
             delete Temp;
             Size--;
         }
     }
     //Removes the first element from the list.
-    public void pop(){
+    void pop(){
         Node* nav = Head; 
-        while(nav.getNex()t!=nullptr){
-            nav = nav.getNext()
+        while(nav->getNext()!=nullptr){
+            nav = nav->getNext();
         }
          
-        nav.getPrev.setData(nullptr);
+        nav->getPrev()->setData(nullptr);
         delete nav; 
     }
     //Removes the last element from the list.
-    public void clear(){
+    void clear(){
        Node* temp = Head;
        while (temp!=nullptr){
-        Head = temp.getNext();
+        Head = temp->getNext();
         delete temp;
         temp= Head;
        }
     }
     //Removes all elements from the list.
-    public bool contains(T element) const{
+    bool contains(T element) const{
             Node *temp = Head;
             while (temp != nullptr)
             {
                 
-                if(temp.getData() == element) {
-                    return true
+                if(temp->getData() == element) {
+                    return true;
                 }
-                temp = temp.getNext();
+                temp = temp->getNext();
             }
             return false; 
     }
     //Returns true if you find a node whose data equals the specified element, false otherwise.
-    public void remove(T element){
-            Node *temp = Head;
+    void remove(T element){
+            Node* temp = Head;
             while (temp != nullptr)
             {
 
-                if (temp.getData() == element)
+                if (temp->getData() == element)
                 {
                     delete temp; 
-                    return 0; 
+                    return;
                 }
-                temp = temp.getNext();
+                temp = temp->getNext();
             }
         }
     
