@@ -1,100 +1,74 @@
-
+#include <queue>
 
 // TreeNode class should go in the "ufl_cap4053::fundamentals" namespace!
 namespace ufl_cap4053 { namespace fundamentals {
+    using namespace std;
 template <typename T>
 class TreeNode
 {
-private:
-    T Data;
-    TreeNode<T>* child;
-    TreeNode<T>* next;
-    TreeNode<T>* prev;
+    vector<TreeNode<T>*> Children;
+    TreeNode<T>* Parent;
+   
+    T data;
 public:
-    TreeNode<T>(){
-        TreeNode<T>* child = nullptr;
-        T Data = T();
+    TreeNode() {
+        data = T();
+        Children = vector<TreeNode<T>*>();
+        Parent = nullptr; // signifies root
     }
-    TreeNode<T>(T element){
-        TreeNode<T>* child = nullptr;
-        T Data = element;
+    TreeNode(T element) {
+        data = element;
+        Children = vector<TreeNode<T>*>();
+        Parent = nullptr; // signifies root
     }
-    const T& getData() const{
-        return Data;
+    const T& getData() const {
+        return data;
     }
-    size_t getChildCount() const{
-        size_t count = 0;
-        TreeNode<T>* temp = child;
-        while(temp != nullptr){
-            count++;
-            temp = temp->next;
-        }
-        return count;
+    size_t getChildCount() const {
+        return Children.size();
     }
-    TreeNode<T>* getChild(size_t index){
-        TreeNode<T>* temp = child;
-        for(size_t i = 0; i < index; i++){
-            temp = temp->next;
-        }
+    TreeNode<T>* getChild(size_t index) {
+        return Children[index];
+    }
+    TreeNode<T>* getChild(size_t index) const {
+        return Children[index];
+    }
+    void addChild(TreeNode<T>* child) {
+                
+        Parent = this;
+        Children.push_back(child);
+
+    }
+    TreeNode<T>* removeChild(size_t index) {
+        TreeNode<T>* temp = Children[index];
+        Children.erase(Children.begin() + index);
         return temp;
     }
-    TreeNode<T>* getChild(size_t index) const{
-        TreeNode<T>* temp = child;
-        for(size_t i = 0; i < index; i++){
-            temp = temp->next;
-        }
-        return temp;
-    }
-    void addChild(TreeNode<T>* child){
-        if(this->child == nullptr){
-            this->child = child;
-        }
-        else{
-            TreeNode<T>* temp = this->child;
-            while(temp->next != nullptr){
-                temp = temp->next;
+    void breadthFirstTraverse(void (*dataFunction)(const T)) const {
+        queue<TreeNode<T>*> q;
+        q.push(Parent);
+        while (!q.empty()) {
+            TreeNode<T>* temp = q.front();
+            q.pop();
+            dataFunction(temp->getData());
+            for (int i = 0; i < temp->getChildCount(); i++) {
+                q.push(temp->getChild(i));
             }
-            temp->next = child;
-            child->prev = temp;
         }
     }
-    TreeNode<T>* removeChild(size_t index){
-        TreeNode<T>* temp = child;
-        for(size_t i = 0; i < index; i++){
-            temp = temp->next;
-        }
-        if(temp->prev != nullptr){
-            temp->prev->next = temp->next;
-        }
-        if(temp->next != nullptr){
-            temp->next->prev = temp->prev;
-        }
-        return temp;
-    }
-    void breadthFirstTraverse(void (*dataFunction)(const T)) const{
-        TreeNode<T>* temp = child;
-        while(temp != nullptr){
-            dataFunction(temp->getData());
-            temp = temp->next;
+    void preOrderTraverse(void (*dataFunction)(const T)) const {
+        dataFunction(this->getData());
+        for (int i = 0; i < this->getChildCount(); i++) {
+            this->getChild(i)->preOrderTraverse(dataFunction);
         }
     }
-    void preOrderTraverse(void (*dataFunction)(const T)) const{
-        TreeNode<T>* temp = child;
-        while(temp != nullptr){
-            dataFunction(temp->getData());
-            temp->preOrderTraverse(dataFunction);
-            temp = temp->next;
+    void postOrderTraverse(void (*dataFunction)(const T)) const {
+        for (int i = 0; i < this->getChildCount(); i++) {
+            this->getChild(i)->postOrderTraverse(dataFunction);
         }
+        dataFunction(this->getData());
     }
-    void postOrderTraverse(void (*dataFunction)(const T)) const{
-        TreeNode<T>* temp = child;
-        while(temp != nullptr){
-            temp->postOrderTraverse(dataFunction);
-            dataFunction(temp->getData());
-            temp = temp->next;
-        }
-    
-    }
+
 };
 
 
